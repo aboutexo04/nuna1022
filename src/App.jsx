@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Box from './component/box'
+import Box from './component/Box'
 //1.박스두개(title, 사진, 결과값)
 //2.가위, 바위, 보 버튼이 있음
 //3.사용자가 버튼을 누르면 클릭한 값이 박스에 보임
