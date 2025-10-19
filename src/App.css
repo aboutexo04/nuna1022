@@ -77,3 +77,43 @@ button:active {
   transform: translateY(0);
   box-shadow: 0 2px 10px rgba(33, 150, 243, 0.3);
 }
+
+/* 승패 결과에 따른 테두리 색상 */
+.box-win {
+  border-color: #4CAF50 !important;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3) !important;
+}
+
+.box-win h1 {
+  color: #2E7D32 !important;
+}
+
+.box-win h2 {
+  color: #4CAF50 !important;
+}
+
+.box-lose {
+  border-color: #D32F2F !important;
+  box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4) !important;
+}
+
+.box-lose h1 {
+  color: #B71C1C !important;
+}
+
+.box-lose h2 {
+  color: #D32F2F !important;
+}
+
+.box-tie {
+  border-color: #424242 !important;
+  box-shadow: 0 4px 15px rgba(66, 66, 66, 0.3) !important;
+}
+
+.box-tie h1 {
+  color: #212121 !important;
+}
+
+.box-tie h2 {
+  color: #424242 !important;
+}
