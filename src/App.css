@@ -196,22 +196,24 @@ button:active {
 /* 반응형 디자인 */
 @media screen and (max-width: 768px) {
   .box {
-    width: 300px;
-    height: 250px;
+    width: 350px;
+    height: 280px;
   }
   
   .question-mark {
-    font-size: 120px;
+    font-size: 140px;
   }
   
   .item-img {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
   }
   
   .main {
     flex-direction: column;
     gap: 15px;
+    align-items: center;
+    justify-content: center;
   }
   
   .start-message {
@@ -235,8 +237,8 @@ button:active {
 
 @media screen and (max-width: 480px) {
   .box {
-    width: 180px;
-    height: 150px;
+    width: 200px;
+    height: 160px;
   }
   
   .question-mark {
@@ -249,28 +251,36 @@ button:active {
   }
   
   .box h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .box h2 {
-    font-size: 12px;
-  }
-  
-  .start-message {
-    padding: 10px;
-  }
-  
-  .main-text {
-    font-size: 16px;
-  }
-  
-  .sub-text {
     font-size: 10px;
   }
   
+  .main {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .start-message {
+    padding: 8px;
+    margin: 0 10px;
+  }
+  
+  .main-text {
+    font-size: 14px;
+  }
+  
+  .sub-text {
+    font-size: 9px;
+  }
+  
   button {
-    padding: 6px 12px;
-    font-size: 11px;
+    padding: 6px 10px;
+    font-size: 10px;
     margin: 2px;
   }
 }
@@ -278,17 +288,17 @@ button:active {
 /* 매우 작은 화면 (320px 이하) */
 @media screen and (max-width: 320px) {
   .box {
-    width: 150px;
-    height: 120px;
+    width: 180px;
+    height: 140px;
   }
   
   .question-mark {
-    font-size: 60px;
+    font-size: 70px;
   }
   
   .item-img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
   }
   
   .box h1 {
@@ -299,8 +309,16 @@ button:active {
     font-size: 10px;
   }
   
+  .main {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .start-message {
     padding: 8px;
+    margin: 0 5px;
   }
   
   .main-text {
