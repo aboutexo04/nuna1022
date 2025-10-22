@@ -1,16 +1,26 @@
-# React + Vite
+# 가위바위보 게임
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React와 Vite로 만든 간단한 가위바위보 게임입니다.
 
-Currently, two official plugins are available:
+## 게임 방법
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. "가위바위보 게임 시작!" 버튼을 클릭합니다
+2. 가위, 바위, 보 중 하나를 선택합니다
+3. 컴퓨터가 랜덤으로 선택한 결과와 비교합니다
+4. 승패에 따라 박스 색상이 변경됩니다
+   - 🟢 이기면 초록색
+   - 🔴 지면 빨간색
+   - ⚪ 비기면 그레이색
 
-## React Compiler
+## 기술 스택
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- CSS3
 
-## Expanding the ESLint configuration
+## 실행 방법
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
