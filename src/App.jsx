@@ -27,6 +27,7 @@ function App() {
   const [userSelect, setUserSelect] = useState(null)
   const [computerSelect, setComputerSelect] = useState(null)
   const [result, setResult] = useState("")
+  const [gameStarted, setGameStarted] = useState(false)
 
   const randomChoice = () => {
     const choices = Object.keys(choice) // ['rock', 'scissor', 'paper']
@@ -65,16 +66,29 @@ function App() {
     if (result === "tie") return "tie"
     return result === "win" ? "lose" : "win"
   }
+
+  const startGame = () => {
+    setGameStarted(true)
+  }
   return (
     <>
       <div className="main">
-        <Box title="You" item={userSelect} result={getUserResult()} />
-        <Box title="Computer" item={computerSelect} result={getComputerResult()} />
+        <Box title="You" item={userSelect} result={getUserResult()} gameStarted={gameStarted} />
+        <Box title="Computer" item={computerSelect} result={getComputerResult()} gameStarted={gameStarted} />
       </div>
       <div className="main">
-        <button onClick={() => play("scissor")}>가위</button>
-        <button onClick={() => play("rock")}>바위</button>
-        <button onClick={() => play("paper")}>보</button>
+        {!gameStarted ? (
+          <div className="start-message" onClick={startGame}>
+            <div className="main-text">가위바위보 게임 시작!</div>
+            <div className="sub-text">컴퓨터는 랜덤으로 선택합니다</div>
+          </div>
+        ) : (
+          <>
+            <button onClick={() => play("scissor")}>가위</button>
+            <button onClick={() => play("rock")}>바위</button>
+            <button onClick={() => play("paper")}>보</button>
+          </>
+        )}
       </div>
     </>
   )

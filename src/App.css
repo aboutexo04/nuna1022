@@ -117,3 +117,77 @@ button:active {
 .box-tie h2 {
   color: #424242 !important;
 }
+
+/* 초기 상태 스타일 */
+.box-initial {
+  border-color: #2196F3 !important;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2) !important;
+}
+
+.box-initial h1 {
+  color: #1565C0 !important;
+}
+
+.box-initial h2 {
+  color: #2196F3 !important;
+}
+
+.question-mark {
+  font-size: 200px;
+  font-weight: bold;
+  color: #2196F3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.start-message {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);
+  border: 2px solid #2196F3;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1565C0;
+  margin-bottom: 8px;
+}
+
+.sub-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1976D2;
+}
+
+.start-message:hover {
+  background: linear-gradient(135deg, #BBDEFB 0%, #90CAF9 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+.start-message:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(33, 150, 243, 0.3);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
